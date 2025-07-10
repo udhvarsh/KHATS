@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #c286fa; /* keep orange-red color */
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: #00aeff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #a800f7; /* button color close to screenshot */
+      border: none;
+      border-radius: 6px;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #7000da;
+    }
+  </style>
+</head>
+<body>
+  <form action="home.html" method="post">
+    <div class="login-box">
+      <h2>Login</h2>
+      <input type="text" name="uname" placeholder="Username" required>
+      <input type="password" name="psw" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</body>
+</html>

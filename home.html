@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Vertical right sidebar nav */
+    nav {
+      position: fixed;           /* Fix it on the right */
+      top: 0;
+      right: 0;                 /* Changed from left: 0 to right: 0 */
+      height: 100vh;             /* Full height of viewport */
+      width: 180px;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark bg */
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;    /* Stack links vertically */
+      align-items: flex-start;   /* Align links to left inside nav */
+      box-sizing: border-box;
+    }
+    
+    nav a {
+      color: aqua;
+      padding: 12px 20px;
+      text-decoration: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Add some right margin to content so it doesn't hide behind nav */
+    body {
+      margin-right: 180px;     /* Changed from margin-left to margin-right */
+      background-image: url('file:///C:/Users/placement/Downloads/pic.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: rgb(0, 195, 255);
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-top: 30px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="color: rgb(0, 195, 255);">Welcome to careers at KHA Technology Solutions</h1>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+</body>
+</html>
